@@ -1,0 +1,184 @@
+
+@media only screen and (max-width: 1500px){
+
+    header>.menu>.nav-links> ul{
+        visibility: hidden;
+    }
+
+    header>.menu>.nav-links>.menuOn{
+        z-index: 10000;
+    }
+
+    header>.menu>.nav-links>.showMenu{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: white;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header>.menu>.nav-links>.btn> button{
+        visibility: hidden;
+    }
+
+    header>.menu>.nav-links>.hamburguer{
+        visibility: visible;
+        z-index: 100;
+        margin-right: 0px;
+    }
+    header>.menu>.nav-links>.btn>.a{
+        visibility: hidden;
+    }
+
+    /* footer */
+
+    footer>.container-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer>.container-footer>.about{
+        margin-top: 100px;
+        width: 70vw;
+    }
+
+    footer>.container-footer>.emailbox{
+        transform: translateX(-200px);
+        visibility: hidden;
+        transition: 0.8s;
+        width: 70vw;
+    }
+    footer>.container-footer>.emailbox>input{
+        width: 45vw;
+    }
+
+    footer>.container-footer>.emailbox>.doubt{
+        width: 45vw;
+    }
+
+    footer>.container-footer>.animationEmail{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+
+    section.container-circle{
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 350px;
+    }
+
+    section.container-circle>.container-main{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.container-circle>.container-main>.card{
+        margin-bottom: 50px;
+        width: 450px;
+    }
+
+    body>.triangles>.about-us{
+        height:auto;
+        margin-bottom: 100px;
+    }
+
+    body>.triangles>.about-us>.align>.about-us-profile{
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    body>.triangles>.about-us>.align>.perfil-photo{
+        height: 450px;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    #furniture{
+        height: 900px;
+        margin-bottom: 300px;
+    }
+
+    .furniture-cont>.container>.house-fur{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .furniture-cont>.container>.balcony-fur{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .furniture-cont>.container>.house-fur>.text-house>p{
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    .furniture-cont>.container>.balcony-fur>.text-house>p{
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .furniture-cont>.container>.house-fur>.icon-house{
+        margin-left: 50px;
+        height: 100px;
+    }
+
+    .furniture-cont>.container>.balcony-fur>.icon-house{
+        height: 1000px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #furniture{
+        margin-bottom: 0px;
+    }
+    section>.container-message>.image>.text>.txt{
+        flex-direction: column;
+    }
+
+    .furniture-cont>.container>.house-fur>.text-house>p{
+        font-size: 12px;
+    }
+    
+    .furniture-cont>.container>.balcony-fur>.text-house>p{
+        font-size: 12px;
+    }
+
+    .furniture-cont>.container>.house-fur{
+        margin-bottom: 0px;
+    }
+    .furniture-cont>.container>.house-fur>.icon-house{
+        height: 100px;
+    }
+
+    header>.menu>.nav-links>.hamburguer{
+        position: relative;
+        left: 70px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    header>.menu>.nav-links>#menuOn{
+       display: none ;
+    }
+
+    header>.menu>.nav-links>.menuHide{
+        margin-right: 120px;
+    }
+}

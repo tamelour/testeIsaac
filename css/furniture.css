@@ -1,0 +1,128 @@
+.furniture-cont{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.furniture-cont>.container{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.furniture-cont>.container>.house-fur{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.6s;
+    visibility: hidden;
+    padding: 15px 15px;
+    transform: translateX(150px);
+}
+
+.furniture-cont>.container>.house-fur::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    visibility: visible;
+    margin-left: -20px;
+}
+
+.furniture-cont>.container>.animateHouseFur{
+    transform: translateX(0px);
+    visibility: visible;
+}
+
+.furniture-cont>.container>.house-fur:hover::before{
+    border: 2px solid white;
+}
+
+.furniture-cont>.container>.house-fur>.icon-house{
+    height: 200px;
+    width: 300px;
+    background-color: #E66423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.furniture-cont>.container>.house-fur>.text-house{
+    width: 800px;
+}
+
+.furniture-cont>.container>.house-fur>.icon-house>img{
+    width: 100px;
+    height: 100px;
+}
+
+.furniture-cont>.container>.house-fur>.text-house>p{
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+/* ////////////////  balcony //////////////// */
+
+.furniture-cont>.container>.balcony-fur{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition:1s;
+    visibility: hidden;
+    padding: 15px 15px;
+    transform: translateX(-150px);
+}
+
+.furniture-cont>.container>.balcony-fur::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    visibility: visible;
+    margin-left: -20px;
+}
+
+.furniture-cont>.container>.animateBalconyFur{
+    transform: translateX(0px);
+    visibility: visible;
+}
+
+.furniture-cont>.container>.balcony-fur:hover::before{
+    border: 2px solid white;
+}
+
+.furniture-cont>.container>.balcony-fur>.icon-house{
+    height: 200px;
+    width: 300px;
+    background-color: #fc4850;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.furniture-cont>.container>.balcony-fur>.text-house{
+    width: 800px;
+}
+
+.furniture-cont>.container>.balcony-fur>.icon-house>img{
+    width: 100px;
+    height: 100px;
+}
+
+.furniture-cont>.container>.balcony-fur>.text-house>p{
+    color: white;
+    letter-spacing: 1px;
+}

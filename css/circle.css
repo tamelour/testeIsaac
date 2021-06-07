@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+.container-circle{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.container-circle>.container-main{
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-circle>.container-main>.card{
+    width: 350px;
+    height:400px;
+    transition: width 0.5s;
+    background-color: #5f5f5f;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgb(26, 26, 26, 0.7);
+    cursor: pointer;
+}
+
+.container-circle>.container-main>.card>.back-circle{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-circle>.container-main>.card>.back-circle>.left{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(102, 102, 102);
+    position: absolute;
+    border-radius: 100%;
+    clip: rect(0px 125px 1000px 0px);
+}
+
+.container-circle>.container-main>.card>.back-circle>.left>.bar-progress{
+    height: 250px;
+    width: 250px;
+    -webkit-border-radius: 100%;
+    position: absolute;
+    clip: rect(0px 125px 100px 0px);
+    animation: anima 2s linear both;
+    transform: rotate(0deg);
+}
+
+
+@keyframes anima{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.container-circle>.container-main>.card>.back-circle>.right{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(102, 102, 102);
+    border-radius: 100%;
+    position: absolute;
+    clip: rect(0px 125px 1000px 0px);
+    transform: rotate(180deg);
+}
+
+.container-circle>.container-main>.card>.back-circle>.right>.bar-progress{
+    height: 250px;
+    width: 250px;
+    -webkit-border-radius: 100%;
+    position: absolute;
+    clip: rect(0px 125px 1000px 0px);
+    animation: rotation 2s linear both;
+    animation-delay: 0.9s;
+}
+
+@keyframes rotation{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.container-circle>.container-main>.card>.back-circle>.progress{
+    width: 220px;
+    height: 220px;
+    z-index: 10;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 110px, 100px, 0px);
+    background-color: #4D4C4C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ////////////// COLORS /////////////// */
+
+.container-circle>.container-main>.card>.back-circle>.color-left{
+    background-color: #E66423;
+}
+
+.container-circle>.container-main>.card>.back-circle>.color-midle{
+    background-color: rgb(65, 0, 77);
+}
+
+.container-circle>.container-main>.card>.back-circle>.color-right{
+    background-color: #fc4850;
+}
+
+.container-circle>.container-main>.card>.back-circle>.color-left>.color-progress,
+.container-circle>.container-main>.card>.back-circle>.color-midle>.color-progress,
+.container-circle>.container-main>.card>.back-circle>.color-right>.color-progress{
+    background-color: rgb(102, 102, 102);
+}
+
+
+/* ////////////// POSITION  ////////////// */
+
+.container-circle>.container-main>.card>.back-circle>.progress>.name{
+    position: absolute;
+    z-index: 100;
+    margin-top: 300px;
+}
+
+.container-circle>.container-main>.card>.back-circle>.progress>.name> h3{
+    color: white;
+    font-family: poppins;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.container-circle>.container-main>.card>.back-circle>.progress>div>h1{
+    transition: 0.5s;
+    
+}
+
+.container-circle>.container-main>.card:hover>.back-circle>.progress>div>h1{
+    font-size: 3em;
+}
+
+/* //////////////// MARCAÇÃO ////////////// */
+
+.container-circle>.container-main>.card>.back-circle>.progress::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition:width 0.5s ease-in-out;
+    border-radius:100%;
+    background-color: rgb(253, 253, 253);
+    margin-top: 230px;
+    animation: drop 1s 3.2s forwards;
+    
+}
+
+.container-circle>.container-main>.card>.back-circle>.ball::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+    border-radius: 100%;
+    background-color: #E66423;
+    margin-top: 230px;
+    animation: drop1 1s 3.2s forwards;
+    opacity: 0;
+}
+
+
+.container-circle>.container-main>.card>.back-circle>.ball1::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+    border-radius: 100%;
+    background-color: #43004F;
+    margin-top: 230px;
+    animation: drop1 1s 3.2s forwards;
+    opacity: 0;
+}
+
+
+.container-circle>.container-main>.card>.back-circle>.ball2::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+    border-radius: 100%;
+    background-color:#fc4850;
+    margin-top: 230px;
+    animation: drop1 1s 3.2s forwards;
+    opacity: 0;
+}
+
+@keyframes drop{
+    100%{
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@keyframes drop1{
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p,
+a,
+h1,
+textarea,
+input{
+    font-family: 'poppins';
+}
+
+
+
+body{
+    background-color: #4D4C4C;
+    overflow: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 100000;
+    position: fixed;
+}
+
+
+header>.menu{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+
+header>.menu>.nav-links{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+header>.menu>.nav-links>.menuHide{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 130px;
+}
+
+header>.menu>.nav-links>#menuOn{
+    visibility: hidden;
+    transition:0.5s;
+}
+
+header>.menu>.nav-links> ul > li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 76px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+header>.menu>.nav-links> ul > li:hover{
+    border-bottom: 3px inset #fc4850 ;
+}
+
+header>.menu>.nav-links> ul > li:hover a{
+    color: #fc4850;
+}
+
+header>.menu>.nav-links> ul > li > a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header>.menu>.nav-links>.btn>.a{
+    width: auto;
+    height: auto;
+    visibility: visible;
+}
+
+header>.menu>.nav-links>.btn>.a> button{
+    background-color: transparent;
+    border: 1px solid #fc4850;
+    background-color: #fc4850;
+    border-radius: 7px;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+header>.menu>.nav-links>.hamburguer{
+    width: auto;
+    height: auto;
+    visibility: hidden;
+}
+
+header>.menu>.nav-links>.hamburguer> button{
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+}   
+
+header>.menu>.nav-links>.hamburguer> button img{
+    width: 30px;
+    height: 30px;
+}
+
+header>.menu>.nav-links>.btn>.a> button:hover{
+    background-color: white;
+    border: 1px solid #fc4850;
+}
+
+header>.menu>.nav-links>.btn>.a> button:hover> p{
+    color: #fc4850;
+}
+
+header>.menu>.nav-links>.btn>.a> button > p{
+    color: white;
+    transition: 0.2s;
+}
+
+/* ###################################################### image scroll ###################################################### */
+
+section{
+    height: auto;
+    width: auto;
+}
+
+
+section >.container-message{
+    width: auto;
+    height: auto;
+    background-color: #43004F;
+}
+
+section >.container-message>.image{
+    height: 700px;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section>.container-message>.image> img{
+    opacity: 0;
+    position: absolute;
+    height: 700px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+section>.container-message>.image>.animation{
+    opacity: 0.2;
+}
+
+section>.container-message>.image>.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section>.container-message>.image>.text>.title{
+    height: auto;
+    width: auto;
+    position: relative;
+    transform: translateY(30px);
+    animation: animate 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: 0.3s;
+}
+section>.container-message>.image>.text>.title> p{
+    font-size: 1.5em;
+    color: white;
+}
+
+section>.container-message>.image>.text>.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section>.container-message>.image>.text>.txt>.text-hover{
+    height: auto;
+    width: auto;
+    transform: translateY(60px);
+    animation: animate 1s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    margin-top: 15px;
+    opacity: 0;
+    transition: 0.3s;
+    animation-timing-function: ease;
+    width: auto;
+    text-align: end;
+}
+
+
+section>.container-message>.image>.text>.txt>.text-hover-2{
+    height: auto;
+    width: auto;
+    transform: translateY(60px);
+    animation: animate 1s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    margin-top: 15px;
+    opacity: 0;
+    transition: 0.3s;
+    animation-timing-function: ease;
+    
+}
+
+section>.container-message>.image>.text>.txt>.text-hover>p{
+    font-size: 2em;
+    color: white;  
+}
+
+section>.container-message>.image>.text>.txt>.text-hover-2>p{
+    font-size: 6em;
+    color: #E66423;  
+}
+section>.container-message>.image>.text>.a>.btn-hover{
+    height: auto;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    transform: translateY(100px);
+    animation: animate 1s;
+    animation-iteration-count: 1;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 20px ;
+}
+
+section>.container-message>.image>.text>.a>.btn-hover> button{
+    background-color: #fc4850;
+    border: none;
+    height: 50px;
+    width: 300px;
+    outline: none;
+    transform: skew(-30deg);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+section>.container-message>.image>.text>.a>.btn-hover> button:hover{
+    transform: skew(30deg);
+    background-color: white;
+}
+
+section>.container-message>.image>.text>.a>.btn-hover> button > p{
+    color: white;
+    font-size: 1.3em;
+    transform: skew(30deg);
+}
+section>.container-message>.image>.text>.a>.btn-hover> button:hover > p{
+    color: #fc4850;
+    transform: skew(-30deg);
+    
+}
+
+
+@keyframes animate{
+    100%{
+        transform: translateY(50px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleMain.css">
+    <link rel="stylesheet" href="css/styleFeed.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="css/furniture.css">
+    <title>Central móveis</title>
+</head>
+<body>
+    <div class="floating" id="contact-floating">
+        <div class="contact-floating">
+            <div class="x" >
+                <img src="/img/close.png" alt="x" onclick="toggleDiv()">
+            </div>
+            <div class="logo">
+
+            </div>
+            <div class="align">
+                
+                <div class="contact">
+                    <div class="whatsapp">
+                        <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+                        <p>(XX) X XXXX XXXX</p>
+                    </div>
+                    <div class="instagram">
+                        <img src="/img/instagram-logo.png" alt="Instagram">
+                        <p>@XXXXXXXXXXXX</p>
+                    </div>
+
+                </div>
+                <div class="loc">
+                    <div class="txt">
+                        <p>Ou venha nos fazer uma visita!</p>
+                    </div>
+                    <div class="location">
+                        <img src="/img/loc.png" alt="loc">
+                        <p>R. XXXXXXXX XXXX nº XXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="menu">
+            <nav class="nav-links">
+
+                <ul class="menuHide">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#furnitures">Produtos</a></li>
+                    <li><a id="scrollSobre" href="#sobre">Sobre</a></li>
+                    <li><a href ="#contact-floating" onclick = "toggleDiv()">Contatos </a></li >
+                </ul>
+
+                <ul id="menuOn">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#furnitures">Produtos</a></li>
+                    <li><a id="scrollSobre" href="#sobre">Sobre</a></li>
+                    <li><a href="#contact-floating" onclick = "toggleDiv()">Contatos</a ></li >
+                </ul>
+
+                <div class="btn">
+                    <a href="#post" class="a">
+                        <button>
+                            <p>Ver Produtos</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="hamburguer">
+                    <button onclick="menuOn();">
+                        <img src="img/hamburguer.png" alt="">
+                    </button>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    
+    <section class="image-scroll">
+        <div class="container-message">
+            <div class="image">
+                <img class="imagem animation" src="img/cozinha.jpg" alt="sem corespondência">
+                <img class="imagem" src="img/slide1.jfif" alt="sem corespondência">
+                <img class="imagem" src="img/slide2.jfif" alt="sem corespondência">
+                <img class="imagem" src="img/slide3.jfif" alt="sem corespondência">
+
+                <div class="text">
+                    <div class="txt">
+                        <div class="title" style="display: none;">   
+                            <p>Lorem ipsum libero aenean</p>
+                        </div>
+                        <div class="text-hover">
+                            <p>Renove seus móveis</br>Pagando</p>
+                        </div>
+                        <div class="text-hover-2">
+                            <p><strong>Barato</strong></p>
+                        </div>
+                    </div>
+                    <a href="#post" class="a">
+                        <div class="btn-hover" id="post">
+                            <button>
+                                <p>Ver Produtos</p>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="container-feed">
+        <!-- <div>
+            <h1>timeline</h1>
+        </div> -->
+        <div class="container-posts" >
+
+            <div class="post" >
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+            <div class="post">
+
+                <div id="backgroundImage" class="photo">
+                    <img id="expandImage" onclick="expand();" src="/img/cozinha.jpg" alt="">
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet r</p>
+                </div>
+                <div class="button">
+                    <button>
+                        Consultar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="container-circle">
+        <div class="container-main">
+            <div class="card card-color">
+                <div class="back-circle">
+
+                    <div class="color-left left">
+                        <div class="bar-progress color-progress"></div>
+                    </div>
+
+                    <div class="color-left right">
+                        <div class="bar-progress color-progress"></div>
+                    </div>
+                    
+                    <div class="progress ball">
+                        <div>
+                            <h1 style="color: white;" id="count1">0<span>%</span></h1>
+                        </div>
+    
+                        <div class="name">
+                            <h3>Compromisso</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-color1">
+                <div class="back-circle">
+
+                    <div class="color-midle left">
+                        <div class="bar-progress color-progress"></div>
+                    </div>
+
+                    <div class="color-midle right">
+                        <div class="bar-progress color-progress"></div>
+                    </div>
+                    
+                    <div class="progress ball1">
+                        <div>
+                            <h1 style="color: white;" id="count2">0<span>%</span></h1>
+                        </div>
+    
+                        <div class="name">
+                            <h3>Veracidade</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-color2">
+                <div class="back-circle">
+
+                    <div class="left color-right">
+                        <div class="bar-progress color-progress"></div>
+                    </div>
+
+                    <div class="right color-right">
+                        <div class="bar-progress color-progress"></div>
+                    </div>
+                    
+                    <div class="progress ball2">
+                        <div>
+                            <h1 style="color: white;" id="count3">0<span>%</span></h1>
+                        </div>
+    
+                        <div class="name">
+                            <h3>Resposabilidade</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <div class="triangles">
+        <div class="about-us">
+            <div class="align">
+
+                <div class="about-us-profile">
+                    <h1><Strong>Quem Somos?</Strong></h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nam volutpat fringilla viverra.
+                        Aenean augue massa, ultricies mattis justo at, 
+                        fringilla sodales est. Vestibulum mollis sit amet 
+                        nulla non pharetra. Praesent lobortis mollis tristique. 
+                        Pellentesque volutpat eros a tellus convallis facilisis 
+                        vel at dolor. Aliquam vitae nibh auctor
+                    </p>
+
+                    <div class="button" onclick="toggleDiv()">
+                        <button id="furnitures" >
+                            Conhecer
+                        </button>
+                    </div>
+                </div>
+
+                <div class="perfil-photo">
+                    <img src="/img/perfil.png" alt="sem corespondência">
+                </div>
+            </div>
+
+        </div>
+        <div class="rtriangle">
+        </div>
+        <div class="ltriangle">
+        </div>
+    </div>
+
+    <div id="furniture" class="furniture-cont">
+        <div class="container">
+            <div class="house-fur">
+                <div class="icon-house">
+                    <img src="img/sofá.png" alt="">
+                </div>
+                <div class="text-house">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nam volutpat fringilla viverra.
+                        Aenean augue massa, ultricies mattis justo at, 
+                        fringilla sodales est. nulla non pharetra. Praesent lobortis mollis tristique. 
+                        Pellentesque volutpat eros a tellus convallis facilisis 
+                        vel at dolor. Aliquam vitae nibh auctoVestibulum mollis sit amet 
+                        nulla non pharetra. Praesent lobortis mollis tristique. </p>
+                </div>
+            </div>
+
+            <div class="balcony-fur">
+                <div class="icon-house">
+                    <img src="img/mesa.png" alt="">
+                </div>
+                <div class="text-house">
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nam volutpat fringilla viverra.
+                        Aenean augue massa, ultricies mattis justo at, 
+                        fringilla sodales est. nulla non pharetra. Praesent lobortis mollis tristique. 
+                        Pellentesque volutpat eros a tellus convallis facilisis 
+                        vel at dolor. Aliquam vitae nibh auctoVestibulum mollis sit amet 
+                        nulla non pharetra. Praesent lobortis mollis tristique. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+
+
+            <div class="emailbox">
+                <input type="text" placeholder="Email">
+                <input type="email" placeholder="Nome">
+                <div class="doubt" contenteditable="true">
+                    <p id="hide">Duvidas</p>
+                </div>
+                <div class="btnEnviar">
+                    <button>
+                        <p>Enviar</p>
+                    </button>
+                </div>
+            </div>
+
+
+            <div id="sobre" class="about">
+                <h1>Sobre</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nam volutpat fringilla viverra.
+                    Aenean augue massa, ultricies mattis justo at, 
+                    fringilla sodales est. Vestibulum mollis sit amet 
+                    nulla non pharetra. Praesent lobortis mollis tristique. 
+                    Pellentesque volutpat eros a tellus convallis facilisis 
+                    vel at dolor. Aliquam vitae nibh auctor
+                </p>
+            </div>
+        
+
+        </div>
+        <div class="container-copy">
+            <div class="copy">
+                <a>@2021, Todos os direitos reservados.</p>
+            </div>
+            <div class="options">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos de uso</p>
+                <a href="#">Sobre</p>
+                <a href="#">Nos contate</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script/animationImage.js"></script>
+</body>
+</html>
